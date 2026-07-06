@@ -7,7 +7,12 @@
 当文件或文件夹被删除到 Windows 回收站后，自动复制一份到本地备份目录。
 
 它不做全盘实时同步，也不会在每次保存文件时复制，更适合用来防误删。
+## 安装
 
+### Windows 系统直接安装
+
+```powershell
+irm https://raw.githubusercontent.com/Polestar666/yykj_backup_script/main/install.ps1 | iex
 ## 功能特点
 
 - 只监听回收站，不做整盘实时备份
