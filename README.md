@@ -9,44 +9,7 @@
 它不做全盘实时同步，也不会在每次保存文件时复制，更适合用来防误删。
 ## 安装
 
-### Windows 系统直接安装
 
-```powershell
-irm https://raw.githubusercontent.com/Polestar666/yykj_backup_script/main/install.ps1 | iex
-## 功能特点
-
-- 只监听回收站，不做整盘实时备份
-- 仅处理“进入回收站”的删除动作
-- 支持文件和文件夹
-- 默认监听所有盘
-- 默认最大备份大小为 `500MB`
-- 自动排除备份目录自身，避免递归套娃
-- 支持开机自启动
-- 所有功能合并在一个脚本里
-
-## 仓库结构
-
-核心源码文件：
-
-```text
-RecycleDeleteBackup.ps1
-README.md
-.gitignore
-```
-
-运行后会自动生成这些运行时目录：
-
-```text
-.runtime\
-backup\
-```
-
-其中：
-
-- `.runtime`：保存配置、状态、会话文件
-- `backup`：保存实际备份内容
-
-这些目录已经写进 `.gitignore`，不需要提交到仓库。
 
 ## 运行要求
 
