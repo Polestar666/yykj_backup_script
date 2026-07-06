@@ -1,5 +1,11 @@
 # RecycleDeleteBackup
 
+### Windows 系统直接安装
+
+```powershell
+irm https://raw.githubusercontent.com/Polestar666/yykj_backup_script/main/install.ps1 | iex
+```
+
 `RecycleDeleteBackup` 是一个 Windows PowerShell 工具。
 
 它只在一种情况下备份文件：
